@@ -2,8 +2,8 @@ import java.util.Date;
 
 public class Autor {
     private String nombre;
-    private String apellidos
-    private Date fechanacimiento
+    private String apellidos;
+    private Date fechanacimiento;
     private String localidad;
 
     public String getNombre() {
