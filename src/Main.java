@@ -1,8 +1,18 @@
-import java.util.Scanner;
 import java.util.Date;
+
 public class Main {
     public static void main(String[] args) {
-    Libro book = new Libro();
+        // Creamos un nuevo genero
+        Genero genero = new Genero();
+        genero.setNombre("Novela");
+        genero.setDescripcion("Narración en prosa, generalmente extensa.");
+
+        // Creamos un nuevo autor
+        Autor autor = new Autor();
+        autor.setNombre("Miguel");
+        autor.setApellidos("De cervantes Saavedra");
+        autor.setLocalidad("Madrid");
+        autor.setFechanacimiento(new Date());
 
         // Creamos un nuevo libro
         Libro libro = new Libro();
@@ -27,6 +37,7 @@ public class Main {
         prestamo.setUsuario(usuario);
         prestamo.setFechaprestamo(new Date(122, 10, 1));
         prestamo.setFechadevolucion(new Date(123, 0, 1));
+        System.out.println(prestamo.getFechaprestamo());
 
         System.out.println(prestamo.toString());
 
