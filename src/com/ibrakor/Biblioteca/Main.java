@@ -35,6 +35,7 @@ public class Main {
 
         // Creamos un nuevo prestamo
         Prestamo prestamo = new Prestamo();
+        prestamo.setCodigoprestamo(7953);
         prestamo.setLibro(libro);
         prestamo.setUsuario(usuario);
         prestamo.setFechaprestamo(new Date(122, 10, 1));
