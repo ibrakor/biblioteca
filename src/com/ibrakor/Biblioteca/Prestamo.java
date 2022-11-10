@@ -8,6 +8,15 @@ public class Prestamo {
     private Date fechaprestamo;
     private Date fechadevolucion;
 
+    private Integer codigoprestamo;
+
+    public Integer getCodigoprestamo() {
+        return codigoprestamo;
+    }
+
+    public void setCodigoprestamo(Integer codigoprestamo) {
+        this.codigoprestamo = codigoprestamo;
+    }
 
     public Libro getLibro() {
         return libro;
