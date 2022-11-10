@@ -38,7 +38,7 @@ public class Prestamo {
     public void setFechadevolucion(Date fechadevolucion) {
         this.fechadevolucion = fechadevolucion;
     }
-    @Override
+
     public String toString() {
         return "El prestamo ha sido realizado por el usuario " + usuario.getNombre() + " " + usuario.getApellidos() + " con DNI " + usuario.getDnis() + " el dia " + getFechaprestamo() + " y la fecha de devolucion es el dia " + getFechadevolucion() + ". El libro prestado es " + libro.getTitulo() + " con ISBN " + libro.getIsbn() + ".";
     }
